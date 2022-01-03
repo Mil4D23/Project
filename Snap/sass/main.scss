@@ -1,0 +1,164 @@
+@import "./color";
+@font-face {
+    font-family: yekan;
+    src: url(../assets/fonts/Yekan.ttf);
+}
+@font-face {
+    font-family: post;
+    src: url(../assets/fonts/Post-Regular.ttf);
+}
+@font-face {
+    font-family: diplomat;
+    src: url(../assets/fonts/Far_Diplomat.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: diplomat !important;
+
+}
+input {
+    outline: none;
+    &::placeholder {
+        color: $gray-color;
+    }
+    
+}
+.desktop-hiden{
+    @media(max-width: 768px){
+       display: none;
+    }
+}
+.bg-transparent {
+    background-color: transparent !important;
+}
+.mt-nagative{
+    margin-top: -100px;
+    @media(max-with: 768px) {
+        margin-top: 0;
+    }
+}
+.no-border {
+    border-color: transparent !important;
+}
+.max-h {
+    max-height: 50vh;
+}
+.main-bg-color {
+    background-color: $green-color !important;
+}
+.item-bg {
+    background-color: $bg-item !important;
+}
+.font-size-1{
+    font-size: 14px !important;
+}
+.b-radius {
+    border-radius: 15px !important;
+    border-color: transparent !important;
+}
+
+.mar-1 {
+    margin-right: 25%!important;
+}
+
+.mal-1 {
+    margin-left: 25% !important;
+}
+
+.bg-gray {
+    background-color: $gray-color !important;
+}
+.button-1{
+    color: $gray-color;
+    background-color: #00D170;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+.span-nav {
+    width: 100%;
+    height: 2px;
+    background-color: #444;
+    display: inline-block;
+}
+.menu-md-main{
+    @media(max-width: 768px){
+        text-align: right;
+        margin-right: 0!important;
+        
+    }
+}
+.carosel-pointer{
+    cursor: pointer!important;
+}
+.queri-m{
+    @media (max-width: 768px) {
+        margin-bottom: 2rem!important;
+    }
+}
+.footer-menu {
+    @media(max-width: 768px){
+        ul li {
+            padding: 0 10px 0!important;
+            display: inline-block!important;
+            
+        }
+        justify-content: center!important;
+    }
+}
+.footer-text-center{
+    @media(max-width: 768px){
+        text-align: center!important;
+        
+    }
+
+}
+.mid-text div{
+
+    @media(max-width: 768px){
+        margin-left: 10%!important;
+        padding-bottom: 20px!important;
+    }
+    & h2 {
+        @media(max-width: 768px){
+            font-size: 40px!important;
+            padding-bottom: 20px!important;
+        }
+    }
+}
+.food-pic img{
+    @media(max-width: 768px){
+        width: 100%!important;
+    }
+}
+.span-md span{
+    @media(max-width: 980px){
+        width: 70px!important;
+        margin-left: 0!important;
+        padding-left: 10px!important;
+    }
+}
+
+.main-input {
+    border: 1px solid transparent !important;
+    border-bottom-color: white !important;
+    margin-left: 10px !important;
+    
+}
+
+.main-background {
+    background: url(../assets/images/intro_desktop.jpg) no-repeat center/ cover;
+    @media(max-width: 768px){
+        min-height: 50vh;
+    }
+}
+.mid-bg-1 {
+    background: url(../assets/images/Food.jpg) no-repeat center/ cover;
+}
+.mid-bg-2 {
+    background: url(../assets/images/asghar-image.jpg) no-repeat center/ cover;
+    @media(max-width: 768px){
+        min-height: 50vh;
+    }
+}
